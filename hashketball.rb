@@ -121,8 +121,8 @@ end
 def num_points_scored(player_name)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
-  binding.pry
   all_players = home_players.merge(away_players)
   player = all_players[player_name]
+  player[:points]
   end
 end
