@@ -1,10 +1,11 @@
 require 'pry'
+
 def game_hash
   {
-    home => {
-      team_name => "Brooklyn Nets",
-      colors => [Black, White],
-      players => {
+    :home => {
+      :team_name => "Brooklyn Nets",
+      :colors => ["Black", "White"],
+      :players => {
         "Alan Anderson" => {
           number: 0,
           shoe: 16,
@@ -58,10 +59,10 @@ def game_hash
       }
 },
 
-    away => {
-      team_name => "Charlotte Hornets",
-      colors => [Turquoise, Purple],
-      players => {
+    :away => {
+      :team_name => "Charlotte Hornets",
+      :colors => ["Turquoise", "Purple"],
+      :players => {
         "Jeff Adrien" => {
           number: 4,
           shoe: 18,
@@ -117,27 +118,18 @@ def game_hash
   }
 end
 
-# def good_practices
-#   game_hash.each do |location, team_data|
-#     #are you ABSOLUTELY SURE what 'location' and 'team data' are? use binding.pry to find out!
-#     binding.pry
-#       team_data.each do |attribute, data|
-#         #are you ABSOLUTELY SURE what 'attribute' and 'team data' are? use binding.pry to find out!
-#         binding.pry
-#
-#         #what is 'data' at each loop through out .each block? when will the following line of code work and when will it break?
-#         data.each do |data_item|
-#             binding.pry
-#       end
-#     end
-#   end
-# end
-#
-# good_practices
+def num_points_scored(player_name)
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
 
-def home_team_name
-  game_hash[:home][:team_name]
+  binding.pry
+  if player_name == "Alan Anderson" ||
+    player_name == "Reggie Evans" ||
+    player_name == "Brook Lopez" ||
+    player_name == "Mason Plumlee" ||
+    player_name == "Jason Terry"
+    return game_hash[:home][:players][:player_name][:points]
+  else
+    return game_hash[:away][:players][:player_name][:points]
+  end
 end
-
-game_hash
-puts home_team_name 
