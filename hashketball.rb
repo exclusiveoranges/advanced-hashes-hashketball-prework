@@ -155,6 +155,6 @@ def team_names
 end
 
 def player_numbers(team_name)
-  binding.pry
+  if team_name == "Brooklyn Nets"
   game_hash[:home][:players]["Alan Anderson"][:number]
 end
