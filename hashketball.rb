@@ -167,10 +167,16 @@ if team_name == "Brooklyn Nets"
   home_players_array.each do |player|
     home_numbers_array<<game_hash[:home][:players][player][:number]
   end
+  home_numbers_array
 else
   away_players_array.each do |player|
     away_numbers_array<<game_hash[:away][:players][player][:number]
+  end
+  away_numbers_array
 end
+end
+
+
 
 
 
