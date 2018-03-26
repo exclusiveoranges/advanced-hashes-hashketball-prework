@@ -123,13 +123,6 @@ def num_points_scored(player_name)
   away_players = game_hash[:away][:players]
   binding.pry
   all_players = home_players.merge(away_players)
-  if player_name == "Alan Anderson" ||
-    player_name == "Reggie Evans" ||
-    player_name == "Brook Lopez" ||
-    player_name == "Mason Plumlee" ||
-    player_name == "Jason Terry"
-    return game_hash[:home][:players][:player_name][:points]
-  else
-    return game_hash[:away][:players][:player_name][:points]
+  player = all_players[player_name]
   end
 end
