@@ -132,3 +132,7 @@ def find_player(player_name)
   all_players = home_players.merge(away_players)
   player = all_players[player_name]
 end
+
+def shoe_size(player_name)
+  find_player(player_name)
+  
