@@ -124,6 +124,7 @@ def num_points_scored(player_name)
   all_players = home_players.merge(away_players)
   player = all_players[player_name]
   player[:points]
+  binding.pry
 end
 
 def find_player(player_name)
@@ -159,7 +160,6 @@ def player_numbers(team_name)
   away_players = game_hash[:away][:players]
   home_array = []
   away_array = []
-  binding.pry
 
   if team_name == "Brooklyn Nets"
         home_players.each do |player|
