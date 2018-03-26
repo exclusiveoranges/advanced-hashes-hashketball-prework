@@ -131,7 +131,6 @@ def find_player(player_name)
   away_players = game_hash[:away][:players]
   all_players = home_players.merge(away_players)
   player = all_players[player_name]
-  binding.pry
 end
 
 def shoe_size(player_name)
