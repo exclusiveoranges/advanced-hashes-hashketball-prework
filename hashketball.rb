@@ -156,6 +156,7 @@ def team_names
 end
 
 def player_numbers(team_name)
+game_hash[:home][:players]["Alan Anderson"][:number]
 
 end
 
@@ -164,19 +165,19 @@ end
 
 
 
-  home_players = game_hash[:home][:players]
-  away_players = game_hash[:away][:players]
-  home_array = []
-  away_array = []
-
-  if team_name == "Brooklyn Nets"
-        home_players.each do |player|
-          home_array.push(game_hash[:home][:players][player][:number])
-        end
-  else
-        away_players.each do |player|
-          away_array.push(game_hash[:away][:players][player][:number])
-
-        end
-  end
-end
+#   home_players = game_hash[:home][:players]
+#   away_players = game_hash[:away][:players]
+#   home_array = []
+#   away_array = []
+#
+#   if team_name == "Brooklyn Nets"
+#         home_players.each do |player|
+#           home_array.push(game_hash[:home][:players][player][:number])
+#         end
+#   else
+#         away_players.each do |player|
+#           away_array.push(game_hash[:away][:players][player][:number])
+#
+#         end
+#   end
+# end
