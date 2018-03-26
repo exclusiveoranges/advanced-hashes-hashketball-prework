@@ -153,3 +153,7 @@ def team_names
   team_name_array<<home_team_name<<away_team_name
   team_name_array
 end
+
+def player_numbers(team_name)
+  game_hash[:home][:players]["Alan Anderson"][:number]
+end 
