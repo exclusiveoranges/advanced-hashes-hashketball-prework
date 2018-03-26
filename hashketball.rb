@@ -134,5 +134,6 @@ def find_player(player_name)
 end
 
 def shoe_size(player_name)
-  find_player(player_name)
-  
+  player = find_player(player_name)
+  player[:shoe]
+end 
