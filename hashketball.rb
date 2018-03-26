@@ -155,5 +155,6 @@ def team_names
 end
 
 def player_numbers(team_name)
+  binding.pry
   game_hash[:home][:players]["Alan Anderson"][:number]
-end 
+end
