@@ -170,5 +170,6 @@ def player_numbers(team_name)
           away_array.push(game_hash[:away][:players][player][:number])
 
         end
+        binding.pry
   end
 end
