@@ -174,3 +174,7 @@ else
   away_numbers_array
 end
 end
+
+def player_stats(player_name)
+  game_hash[:home][:players]["Alan Anderson"]
+  
