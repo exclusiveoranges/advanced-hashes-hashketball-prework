@@ -166,6 +166,7 @@ def player_numbers(team_name)
         away_players.each do |player|
           game_hash[:away][:players][player][:number]
         end
+end
 end 
 
 
