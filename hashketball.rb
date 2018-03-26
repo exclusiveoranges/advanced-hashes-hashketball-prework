@@ -124,5 +124,4 @@ def num_points_scored(player_name)
   all_players = home_players.merge(away_players)
   player = all_players[player_name]
   player[:points]
-  end
 end
