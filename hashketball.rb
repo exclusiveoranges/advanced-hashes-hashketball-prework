@@ -156,6 +156,12 @@ def team_names
 end
 
 def player_numbers(team_name)
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+  all_players = home_players.merge(away_players)
+  binding.pry
+
+
 game_hash[:home][:players]["Alan Anderson"][:number]
 
 end
