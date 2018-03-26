@@ -161,9 +161,14 @@ def player_numbers(team_name)
   if team_name == "Brooklyn Nets"
         home_players.each do |player|
           game_hash[:home][:players][player][:number]
-        end 
-    else
-        game_hash[:away][:players][player][:number]
+        end
+  else
+        away_players.each do |player|
+          game_hash[:away][:players][player][:number]
+        end
+end 
+
+
 
 
 end
