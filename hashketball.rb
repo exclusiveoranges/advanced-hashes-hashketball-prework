@@ -155,11 +155,11 @@ def team_names
 end
 
 def player_numbers(team_name)
-  binding.pry
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
   home_array = []
   away_array = []
+  binding.pry
 
   if team_name == "Brooklyn Nets"
         home_players.each do |player|
