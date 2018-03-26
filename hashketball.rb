@@ -178,5 +178,4 @@ end
 
 def player_stats(player_name)
   find_player(player_name)
-  game_hash[:home][:players]["Alan Anderson"]
 end
