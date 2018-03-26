@@ -157,6 +157,8 @@ end
 def player_numbers(team_name)
   home_players = game_hash[:home][:players]
   away_players = game_hash[:away][:players]
+  home_array = []
+  away_array = []
 
   if team_name == "Brooklyn Nets"
         home_players.each do |player|
@@ -167,7 +169,7 @@ def player_numbers(team_name)
           game_hash[:away][:players][player][:number]
         end
 end
-end 
+end
 
 
 
