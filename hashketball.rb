@@ -150,4 +150,6 @@ def team_names
   team_name_array = []
   home_team_name = game_hash[:home][:team_name]
   away_team_name = game_hash[:away][:team_name]
-  home_team_name
+  team_name_array<<home_team_name<<away_team_name
+  team_name_array
+end 
